@@ -918,7 +918,16 @@
 </span></span></code></pre></div><p>直接搜索对应地方修改</p>
 <h1 id="2修改完后生成静态html文件">2.修改完后生成静态html文件</h1>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span></code></pre></div><p>会在public目录下僧成静态的html文件</p>
+<h1 id="3进入public目录把最新的文件上传到github">3.进入public目录，把最新的文件上传到github</h1>
+<p>依次执行以下命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> public
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;备注&#39;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><h1 id="4刷新github-page页面">4.刷新github page页面</h1>
+<p>如果没有看到变化，可能会有缓存，多刷新几次</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span>
 </span></span><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><p>
 
